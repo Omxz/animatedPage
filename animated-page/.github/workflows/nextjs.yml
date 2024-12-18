@@ -25,10 +25,10 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: |
-          npm install
           npm install next@15.1.1
+          npm ci
       - name: Build with Next.js
-        run: npx next build && npx next export
+        run: npx next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
