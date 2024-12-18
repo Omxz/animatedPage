@@ -5,7 +5,9 @@
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,8 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "react-scripts": "^5.0.1"
   }
 }
