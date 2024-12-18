@@ -1,4 +1,4 @@
-import SnowAnimation from "../components/snowanimation";
+import SnowAnimation from "../components/snowAnimation";
 import './globals.css';
 
 export default function Home() {

@@ -163,7 +163,7 @@ class SnowLayer {
         this.snowPileHeights[j] = this.height - 30 + (Math.random() * 10 - 5);
       } else {
         const previousHeight = this.snowPileHeights[j - 1];
-        let delta = Math.random() * 10 - 5;
+        const delta = Math.random() * 10 - 5;
         let newHeight = previousHeight + delta;
 
         const maxHeight = this.height - 10;
@@ -300,7 +300,7 @@ class SnowLayer {
 
     this.drawSnowPile();
 
-    for (let flake of this.snowflakes) {
+    for (const flake of this.snowflakes) {
       const swayX = Math.sin(flake.swayOffset) * flake.swayAmplitude;
 
       const windEffect = wind.speed * wind.direction;
@@ -390,7 +390,7 @@ const SnowAnimation: React.FC = () => {
     });
 
     const animate = () => {
-      for (let layer of snowLayers) {
+      for (const layer of snowLayers) {
         layer.animate(wind);
       }
       animationRef.current = requestAnimationFrame(animate);
@@ -399,7 +399,7 @@ const SnowAnimation: React.FC = () => {
     animate();
 
     const handleResize = () => {
-      for (let layer of snowLayers) {
+      for (const layer of snowLayers) {
         layer.resize();
       }
     };
